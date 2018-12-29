@@ -1,0 +1,150 @@
+body {
+  background: rgb(46, 191, 216);
+}
+
+/* Rules for the scoreboard __________________________________________*/
+.scoreboard {
+  position: absolute;
+  background-color: grey;
+  width: 300px; height: 230px;
+  margin: 20px;
+  top: 0;
+  border: 2px dotted black;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(230, 230, 230);
+}
+
+
+#scoreboard-header { /* All set; don't change */
+  font-size: 150%;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+  margin: 10px;
+}
+
+#user-score-header, #computer-score-header {
+  font-size: 110%;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 20px 20px;
+  width: 100px;
+}
+
+#user-score, #computer-score {
+  font-size: 300%;
+  position: absolute;
+  top: 130px;
+}
+
+#user-score {
+  left: 55px;
+}
+
+#computer-score {
+  right: 55px;
+}
+
+
+/* Rules for the main header on the page _________________________________*/
+.header-container {
+   height: 300px;
+  margin: 10px;
+}
+
+header{
+  position: absolute;
+  width: 220px; 
+  left: 510px; transform: translate(-50%, 70%);
+}
+
+header h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color:rgb(138, 148, 150);
+  text-align: center;
+  transform: translate(0, -10px);
+}
+
+
+.explanation-container {
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  display: inline-block;
+  left: 500px;
+  transform: translate(-220px, 0);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(119, 119, 119);
+}
+
+.explanation-container h2 {
+  display: inline-block;
+  width: 118px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.explanation-container p {
+  margin: 10px;
+  float: right; 
+}
+
+/* The icons for rock, paper, and scissors ___________________________________*/
+
+.icons {
+  position: absolute;
+  display: block;
+  top: 475px;
+  left:275px;
+  width: 500px; height: 450px;
+}
+
+#rock, #paper, #scissors {
+  position: relative;
+  display: inline-block;
+  width: 200px; height: 200px;
+  box-shadow: 0 0 3px 3px;
+}
+
+.paper-container, .scissors-container {
+  display: inline-block;
+}
+
+.rock-container {
+  margin: 10px;
+}
+
+.paper-container {
+  width: 200px; height: 200px;
+  transform: translate(30px, 0);
+}
+
+.scissors-container {
+  width: 200px; height: 200px;
+  float:right;
+  transform: translate(-30px, 0);
+}
+
+#rock {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+/* Handle hovering over icons */
+#rock:hover{
+  box-shadow: 0 0 20px 10px rgb(73, 57, 23);
+}
+
+#paper:hover {
+  box-shadow: 0 0 20px 10px white;
+}
+
+#scissors:hover {
+  box-shadow: 0 0 20px 10px silver;
+}
+
+
